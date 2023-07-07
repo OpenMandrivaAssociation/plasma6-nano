@@ -1,5 +1,5 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20230610
+%define git 20230707
 
 Name:		plasma6-nano
 Version:	5.240.0
@@ -46,5 +46,4 @@ Plasma interface for embedded devices.
 %{_qtdir}/qml/org/kde/plasma/private/nanoshell
 %{_datadir}/plasma/packages/org.kde.plasma.nano.desktoptoolbox
 %{_datadir}/plasma/shells/org.kde.plasma.nano
-%{_datadir}/kservices6/plasma-applet-org.kde.plasma.nano.desktop
 %{_datadir}/metainfo/org.kde.plasma.nano.desktoptoolbox.appdata.xml
