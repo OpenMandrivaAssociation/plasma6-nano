@@ -23,6 +23,7 @@ BuildRequires:	cmake(KF6Plasma)
 BuildRequires:	cmake(KF6WindowSystem)
 BuildRequires:	cmake(KF6Wayland)
 BuildRequires:	cmake(KF6I18n)
+BuildRequires:	plasma6-xdg-desktop-portal-kde
 
 %description
 Plasma interface for embedded devices.
