@@ -26,6 +26,7 @@ BuildRequires:	cmake(KF6Wayland)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6Svg)
 BuildRequires:	cmake(KF6Service)
+BuildRequires:	cmake(KF6ItemModels)
 BuildRequires:	plasma6-xdg-desktop-portal-kde
 
 %description
