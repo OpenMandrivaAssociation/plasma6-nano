@@ -1,5 +1,5 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20230924
+%define git 20230927
 
 Name:		plasma6-nano
 Version:	5.240.0
