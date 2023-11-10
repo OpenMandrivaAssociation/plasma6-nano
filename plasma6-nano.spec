@@ -1,14 +1,14 @@
-%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20231104
+%define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
+#define git 20231104
 
 Name:		plasma6-nano
-Version:	5.240.0
+Version:	5.27.80
 Release:	%{?git:0.%{git}.}1
 Summary:	Plasma interface for embedded devices
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-nano/-/archive/master/plasma-nano-master.tar.bz2#/plasma-nano-%{git}.tar.bz2
 %else
-Source0:	http://download.kde.org/%{stable}/plasma/%(echo %{version} |cut -d. -f1-3)/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/plasma/%(echo %{version} |cut -d. -f1-3)/plasma-nano-%{version}.tar.xz
 %endif
 License:	GPLv2/LGPLv2/LGPLv2.1
 Group:		Graphical desktop/KDE
