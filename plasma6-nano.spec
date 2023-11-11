@@ -3,7 +3,7 @@
 
 Name:		plasma6-nano
 Version:	5.27.80
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	Plasma interface for embedded devices
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-nano/-/archive/master/plasma-nano-master.tar.bz2#/plasma-nano-%{git}.tar.bz2
