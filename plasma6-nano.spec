@@ -2,8 +2,8 @@
 #define git 20231104
 
 Name:		plasma6-nano
-Version:	5.27.80
-Release:	%{?git:0.%{git}.}2
+Version:	5.90.0
+Release:	%{?git:0.%{git}.}1
 Summary:	Plasma interface for embedded devices
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-nano/-/archive/master/plasma-nano-master.tar.bz2#/plasma-nano-%{git}.tar.bz2
@@ -20,9 +20,9 @@ BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6Qml)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:	cmake(Qt6Test)
-BuildRequires:	cmake(KF6Plasma)
+BuildRequires:	cmake(Plasma) >= 5.90.0
 BuildRequires:	cmake(KF6WindowSystem)
-BuildRequires:	cmake(KF6Wayland)
+BuildRequires:	cmake(Wayland) >= 5.90.0
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6Svg)
 BuildRequires:	cmake(KF6Service)
