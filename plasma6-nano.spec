@@ -23,7 +23,8 @@ BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(Plasma) >= 5.90.0
 BuildRequires:	cmake(PlasmaQuick)
 BuildRequires:	cmake(KF6WindowSystem)
-BuildRequires:	cmake(Wayland) >= 5.90.0
+BuildRequires:	cmake(Wayland)
+BuildRequires:	cmake(KWayland) >= 5.90.0
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6Svg)
 BuildRequires:	cmake(KF6Service)
