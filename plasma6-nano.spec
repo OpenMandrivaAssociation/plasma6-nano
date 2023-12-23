@@ -2,7 +2,7 @@
 #define git 20231104
 
 Name:		plasma6-nano
-Version:	5.90.0
+Version:	5.91.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Plasma interface for embedded devices
 %if 0%{?git:1}
