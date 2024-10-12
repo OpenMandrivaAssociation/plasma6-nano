@@ -4,7 +4,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		plasma6-nano
-Version:	6.1.5
+Version:	6.2.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Plasma interface for embedded devices
 %if 0%{?git:1}
@@ -52,6 +52,4 @@ Plasma interface for embedded devices.
 
 %files -f plasma-nano.lang
 %{_qtdir}/qml/org/kde/plasma/private/nanoshell
-%{_datadir}/plasma/packages/org.kde.plasma.nano.desktoptoolbox
 %{_datadir}/plasma/shells/org.kde.plasma.nano
-%{_datadir}/metainfo/org.kde.plasma.nano.desktoptoolbox.appdata.xml
